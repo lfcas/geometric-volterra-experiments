@@ -274,16 +274,3 @@ Pre-training on the broader text corpus before fine-tuning yields a perplexity o
 
 1. **Modal Truncation Horizon**: While the Volterra operator scales linearly as $\mathcal{O}(T \cdot M \cdot d)$, the current implementation discretizes the Chebyshev polynomial base over a fixed context length ($T = 512$). Dynamic sequence length extrapolation requires runtime polynomial re-interpolation.
 2. **Low-Dimensional Modal Rank**: In latent spaces where $d \le 32$, setting $M \ge d$ introduces linear dependence in the associative state $S_m(t)$, capping the performance benefit of higher modal resolutions.
-
----
-
-## Citation & Reference
-
-```bibtex
-@article{volterra_geometric_dl_2026,
-  title={Continuous Volterra-Fredholm Integral Operators and Hyperspherical Geometric Constraints in Deep Neural Architectures},
-  author={Anonymous},
-  year={2026},
-  journal={Repository of Geometric Deep Learning}
-}
-```
